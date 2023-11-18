@@ -22,7 +22,7 @@ export function CategoryPills({ categories, selectedCategory, onSelect }: Catego
 
         const observer = new ResizeObserver(entries => {
 
-            const container = containerRef.current
+            const container = entries[0]?.target
 
             if (container == null) return
             setIsLeft(translate > 0)
