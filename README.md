@@ -6,7 +6,7 @@
 
 The WeTube project is a clone of the front-end layer of the YouTube platform. It is a fully responsive application designed and implemented using TypeScript and React. The project was created using Vite for rapid building and running of the application.
 
-Live version of the project: WeTube Live
+Live version of the project: [WeTube Live](https://wetube-pan-be.netlify.app/)
 ## 2. Technologies
 
 Technologies used in the project:
@@ -17,33 +17,33 @@ Technologies used in the project:
 
 ## 3. Project Structure
 
-wetube/
-│
-├── public/
-│   └── ...
-│
-├── src/
-│   ├── components/
-│   │   ├── Header.tsx
-│   │   ├── VideoPlayer.tsx
-│   │   └── ...
-│   ├── pages/
-│   │   ├── Home.tsx
-│   │   ├── Watch.tsx
-│   │   └── ...
-│   ├── services/
-│   │   ├── api.ts
-│   │   └── ...
-│   ├── styles/
-│   │   ├── global.css
-│   │   └── ...
-│   ├── App.tsx
-│   ├── main.tsx
-│   └── ...
-│
-├── .gitignore
-├── package.json
-└── ...
+wetube/<br>
+│<br>
+├── public/<br>
+│   └── ...<br>
+│<br>
+├── src/<br>
+│   ├── components/<br>
+│   │   ├── Header.tsx<br>
+│   │   ├── VideoPlayer.tsx<br>
+│   │   └── ...<br>
+│   ├── pages/<br>
+│   │   ├── Home.tsx<br>
+│   │   ├── Watch.tsx<br>
+│   │   └── ...<br>
+│   ├── services/<br>
+│   │   ├── api.ts<br>
+│   │   └── ...<br>
+│   ├── styles/<br>
+│   │   ├── global.css<br>
+│   │   └── ...<br>
+│   ├── App.tsx<br>
+│   ├── main.tsx<br>
+│   └── ...<br>
+│<br>
+├── .gitignore<br>
+├── package.json<br>
+└── ...<br>
 
 Description of the structure:
 
