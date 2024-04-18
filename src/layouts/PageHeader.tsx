@@ -8,11 +8,12 @@ export function PageHeader() {
 
     const [showFullWidthSearch, setShowFullWidthSearch] = useState(false)
 
-    
-
-    return <div className="w-full flex gap-10 lg:gap-20 justify-between pt-2 mb-6 px-4">
+    return (
+        <div className="w-full flex gap-10 lg:gap-20 justify-between pt-2 mb-6 px-4">
         <PageHeaderFirstSection hidden={showFullWidthSearch} />
-        <form action="" className={`gap-4 flex-grow justify-center ${showFullWidthSearch ? 'flex' : 'hidden md:flex'}`}>
+        <form action="" 
+        className={`gap-4 flex-grow justify-center 
+        ${showFullWidthSearch ? "flex" : "hidden md:flex"}`}>
             {showFullWidthSearch && (<Button onClick={() => setShowFullWidthSearch(false)} type="button" size="icon" className='flex-shrink-0' variant='ghost'>
                 <ArrowLeft />
             </Button>)}
@@ -46,14 +47,15 @@ export function PageHeader() {
             </Button>
         </div>
     </div>
+    )
 }
 
 type PageHeaderFirstSectionProps = {
-    hidden: boolean
+    hidden?: boolean
 }
 
-function PageHeaderFirstSection({hidden}: PageHeaderFirstSectionProps) {
-    const { toggle } =useSidebarContext()
+export function PageHeaderFirstSection({hidden = false}: PageHeaderFirstSectionProps) {
+    const { toggle } = useSidebarContext()
 
     return (
     <div className={`gap-4 items-center flex-shrink-0 ${hidden ? "hidden" : "flex"}`}>
